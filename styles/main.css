@@ -202,3 +202,12 @@ footer {
 #margTop {
   margin-top: 40px;
 }
+
+#pageNotFound {
+  text-align: center;
+}
+
+#notFound {
+  color: red;
+}
+
