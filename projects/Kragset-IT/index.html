@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Century">
+    <link rel="icon" href="kragsetIT-Rund-SVG.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Kragset IT</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="kragsetLogo" onclick="yes()" src="HVIT-KRAGSET-IT.svg" alt="">
+            <div class="navButtons">
+                <h1 id="btnFonter" class="navKnapp fonter" onclick="font()" >Fonter</h1>
+                <h1 id="btnFarger" class="navKnapp farger" onclick="farger()" >Farger</h1>
+                <h1 id="btnLogo" class="navKnapp fonter" onclick="logo()" >Logo</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 id="visuellProfil">Visuell Profil</h1>
+        <h2 id="undertekst">Kragset IT</h2>   
+        <div class="container">
+            <h2 id="logoOverskrift" class="overskrift">Her er logoene våre</h2>
+          <!--  <h2 id="logoUnderskrift" class="underskrift">blablablabla</h2> -->
+            <div id="imgContainer">
+                <img src="kragsetIT-rund.png" alt="">
+                <img src="kragsetIT-tekst.svg" alt="">
+            </div>  
+            <div id="textContainer">
+                <div id="logoIkon">
+                <h3 id="ikonLogo" class="txtOverskrift">Ikon Logo</h3>
+                <p id="text1" class="avsnittText">Ikonet er firmaets visuelle signatur og identitetsbærer. Den skal kommunisere hvem vi er, og publikum skal gjenkjenne oss når logoen brukes. Ikonet brukes på firmaets klær og annen form for markedsføring.
+                <br>
+                <br>
+                <b>Det er ikke lov å lage egne logoer for sektorer, seksjoner og lignende.</b> Plassér aldri sektor- eller seksjonsnavn, prosjektnavn, slagord eller annen tekst inn som en del av selve logoen. Logoen skal ikke bli strukket eller manipulert på noen måte. Logoorginaler skal ikke endres.</p>
+                </div>
+                <div id="logoTekst">
+                <h3 id="tekstLogo" class="txtOverskrift">Tekst Logo</h3>
+                <p id="text2" class="avsnittText">Tekst logoen er firmaets hovedsignatur. Den skal kommunisere hvem vi er. Tekst logoen brukes av firmaets administrasjon. Den brukes også på en del overordnet informasjon som blant annet stillingsannonser, brevmaler og konvolutter. 
+                <br>
+                <br>
+                <b>Det er ikke lov å lage egne logoer for sektorer, seksjoner og lignende.</b> Plassér aldri sektor- eller seksjonsnavn, prosjektnavn, slagord eller annen tekst inn som en del av selve logoen. Logoen skal ikke bli strukket eller manipulert på noen måte. Logoorginaler skal ikke endres.
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 id="fargerOverskrift" class="overskrift">Her er fargene våre</h2>
+          <!--  <h2 id="fargerUnderskrift" class="underskrift">blablablabla</h2> -->
+            <div id="fargeContainer">
+                <div id="boks1" class="bokser"><p>#1C75BC</p></div>
+                <div id="boks2" class="bokser"><p>#707070</p></div>
+                <div id="boks3" class="bokser"><p>#64BBE3</p></div>
+                <div id="boks4" class="bokser"><p>#C4D6ED</p></div>
+                <div id="boks5" class="bokser"><p>#FF0000</p></div>
+                <div id="boks6" class="bokser"><p>#333333</p></div>
+                <div id="boks7" class="bokser"><p>#000000</p></div>
+                <div id="boks8" class="bokser"><p>#FFFFFF</p></div>
+            </div>
+            <div id="fargerTekst">
+                <p id="fargeRegler">Du skal <b>ALLTID</b> passe på at kontrastene er bra nok når du bruker fargene våre. Du skal for eksempel ikke bruke mørke grå bakgrunnsfarge med sort tekst.</p>
+                <article id="farge1" class="farger">
+                    <h2 id="farge1Overskrift" class="fargeOverskrift">Blå (Primærfarge)</h2>
+                    <div id="fargeBoks1" class="fargeBoks"></div>
+                    <p id="farge1Tekst" class="fargeTekst">Hovedfargen. Brukt i logo og annet. Blått blir ofte assosiert med teknologi.</p>
+                </article>
+                <article id="farge2" class="farger">
+                    <h2 id="farge2Overskrift" class="fargeOverskrift">Grå (Bakgrunnsfarge)</h2>
+                    <div id="fargeBoks2" class="fargeBoks"></div>
+                    <p id="farge2Tekst" class="fargeTekst">Brukes som bakgrunnsfargen til hjemmesider og andre firma-relaterte saker.</p>
+                </article>
+                <h2 id="fargeStottefarger" class="stotteFarger">Støttefarger</h2>
+                <article id="farge3" class="farger">
+                    <h2 id="farge3Overskrift" class="fargeOverskrift">Mellom blå (Støttefarge)</h2>
+                    <div id="fargeBoks3" class="fargeBoks"></div>
+                    <p id="farge3Tekst" class="fargeTekst">Brukes dersom hovedfargen er for lys.</p>
+                </article>
+                <article id="farge4" class="farger">
+                    <h2 id="farge4Overskrift" class="fargeOverskrift">Lyse blå (Støttefarge)</h2>
+                    <div id="fargeBoks4" class="fargeBoks"></div>
+                    <p id="farge4Tekst" class="fargeTekst">En veldig lys variant av blå som kan bli brukt dersom det er nødvendig.</p>
+                </article>
+                <article id="farge5" class="farger">
+                    <h2 id="farge5Overskrift" class="fargeOverskrift">Rød (Støttefarge)</h2>
+                    <div id="fargeBoks5" class="fargeBoks"></div>
+                    <p id="farge5Tekst" class="fargeTekst">En sterk kontrast fra hovedfargen for å få oppmerksomheten til leseren. </p>
+                </article>
+                <article id="farge6" class="farger">
+                    <h2 id="farge6Overskrift" class="fargeOverskrift">Mørke grå (Støttefarge)</h2>
+                    <div id="fargeBoks6" class="fargeBoks"></div>
+                    <p id="farge6Tekst" class="fargeTekst">Mørke grå farge som kan brukes for å lage en bra layout. For eksempel så brukes denne fargen i menylinjen på hjemmesiden.</p>
+                </article>
+                <article id="farge7" class="farger">
+                    <h2 id="farge7Overskrift" class="fargeOverskrift">Sort (Støttefarge)</h2>
+                    <div id="fargeBoks7" class="fargeBoks"></div>
+                    <p id="farge7Tekst" class="fargeTekst">Tekstfarge</p>
+                </article>
+                <article id="farge8" class="farger">
+                    <h2 id="farge8Overskrift" class="fargeOverskrift">Hvit (Støttefarge)</h2>
+                    <div id="fargeBoks8" class="fargeBoks"></div>
+                    <p id="farge8Tekst" class="fargeTekst">Tekstfarge</p>
+                </article>
+            </div> 
+        </div>
+        <div class="container">
+            <h2 id="fontOverskrift" class="overskrift">Her er fontene våre</h2>
+           <!-- <h2 id="fontUnderskrift" class="underskrift">blablablabla</h2> -->
+            <h3 id="fontOverskriftType">Orbitron Bold</h3>
+            <p id="fontBegrunnelse">Vi har to hovedfonter. For overskrifter skal fonten "Orbitron Bold" brukes, dersom det passer bedre kan fonten "Poppins" også brukes. Alt digitalt, som for eksempel hjemmesider, skal bruke fonten "Poppins". Alt analogt, som for eksempel brev, skal bruke fonten "Century". Dersom ingen av disse fontene er tilgjengelige kan du bruke "Microsoft Sans Serif". </p>
+            <div id="fontContainer">
+                <div id="digital">
+                    <h3 id="digitalTxt" class="txtOverskrift">DIGITAL</h3>
+                    <h3 id="fontTxt" class="fontType">Poppins</h3>
+                    <p id="analogText1" class="fontTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor eu dolor vitae imperdiet suspendisse. Purus ac arcu, etiam velit sed eget. Laoreet tristique egestas in sed egestas et parturient euismod.</p>
+                </div>
+                <div id="analog">
+                    <h3 id="analogTxt" class="txtOverskrift">ANALOG</h3>
+                    <h3 id="fontTxt2" class="fontType">Century</h3>
+                    <p id="analogText2" class="fontTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor eu dolor vitae imperdiet suspendisse. Purus ac arcu, etiam velit sed eget. Laoreet tristique egestas in sed egestas et parturient euismod. Tellus suspendisse non, velit at tincidunt morbi arcu sit.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

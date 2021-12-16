@@ -1,0 +1,311 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #707070;
+}
+
+body {
+    margin: 0;
+    
+}
+
+/*?MENY BAR*/
+
+nav {
+    background-color: #333333;
+    border-bottom: 3px solid #FF0000;
+    overflow: visible;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav img {
+    padding-bottom: 5px;
+    float: left;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    width: 220px;
+}
+
+.navKnapp {
+    color: #fff;
+    float: right;
+    margin-right: 50px; 
+    margin-top: 25px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 32px;
+    transition: transform 0.2s;
+}
+
+nav h1:hover {
+    cursor: pointer;
+    color: #ccc;
+    transform: scale(1.08);
+}
+
+nav img:hover {
+    cursor: pointer;
+}
+
+#kragsetLogo {
+    padding-left: 30px;
+}
+
+/*?MAIN INNHOLD*/
+
+main {
+    padding: 0 150px;
+    color: #fff;
+}
+
+#visuellProfil {
+    font-family: "Orbitron", sans-serif;
+    font-size: 52px;
+    color: #1C75BC;
+    text-align: center;
+    margin-bottom: 0px;
+   margin-top: 140px;
+}
+
+#undertekst {
+    font-family: "Orbitron", sans-serif;
+    font-size: 28px;
+    color: #64BBE3;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.container h2 {
+    font-weight: 400;
+}
+
+main .overskrift {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-family: "Poppins SemiBold", sans-serif;
+}
+
+main .underskrift {
+    font-size: 26px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+#imgContainer, #textContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#imgContainer img {
+    width: 440px;
+}
+
+.txtOverskrift {
+ font-size: 28px;
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+
+.avsnittText {
+    width: 440px;
+    font-size: 18px;
+}
+
+#fargerOverskrift, #fontOverskrift {
+    margin-top: 100px;
+}
+
+#fargeRegler {
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 0 8px;
+}
+
+/*?Bokser*/
+.bokser {
+    width: 222px;
+    height: 222px;
+    text-align: center;
+    margin: 10px;
+    justify-self: center;
+}
+
+.bokser p {
+    position: relative;
+    top: 185px;
+    z-index: 50;
+}
+
+#fargeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#boks1 {
+    background: #1C75BC;
+   /* grid-area: "boks1"; */
+}
+
+#boks2 {
+    background: #707070;
+    outline: 2px solid #fff;
+   /* grid-area: "boks2"; */
+}
+
+#boks3 {
+    background: #64BBE3;
+   /* grid-area: "boks3"; */
+}
+
+#boks4 {
+    background: #C4D6ED;
+    color: black;
+   /* grid-area: "boks4"; */
+}
+
+#boks5 {
+    background: #FF0000;
+   /* grid-area: "boks5"; */
+}
+
+#boks6 {
+    background: #333333;
+/*    grid-area: "boks6"; */
+}
+
+#boks7 {
+    background: #000000;
+    /*grid-area: "boks7"; */
+}
+
+
+#boks8 {
+    background: #FFFFFF;
+    color: black;
+    /*grid-area: "boks8"; */
+}
+
+.fargeBoks {
+    width: 100%;
+    height: 30px;
+    background: inherit;
+}
+
+#fargerTekst {
+    margin-top: 40px;
+}
+
+#fargerTekst h2 {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+#fargerTekst .stotteFarger {
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#fargerTekst p {
+    margin-top: 5px;
+}
+
+#fargeBoks1 {
+    background: #1C75BC;
+}
+
+#fargeBoks2 {
+    background: #707070;
+    outline: 2px solid #fff;
+}
+
+#fargeBoks3 {
+    background: #64BBE3;
+}
+
+#fargeBoks4 {
+    background: #C4D6ED;
+}
+
+#fargeBoks5 {
+    background: #FF0000;
+}
+
+#fargeBoks6 {
+    background: #333333;
+}
+
+#fargeBoks7 {
+    background: #000000;
+}
+
+#fargeBoks8 {
+    background: #FFFFFF;
+}
+
+
+#fontOverskriftType {
+    text-align: center;
+    font-size: 38px;
+    font-family: "Orbitron", sans-serif;
+}
+
+#fontBegrunnelse {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 190px;
+    margin-bottom: 40px;
+}
+
+#fontContainer h3 {
+    text-align: center;
+}
+
+#fontContainer .txtOverskrift {
+    font-size: 34px;
+    margin-bottom: 0px;
+    font-family: "Orbitron", sans-serif;
+}
+
+#fontContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.fontType {
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.fontTekst {
+    font-size: 18px;
+    width: 300px;
+}
+#fontTxt2 {
+    font-family: "Century", sans-serif;
+}
+
+#analog, #digital {
+    margin: 0 100px;
+}
+
+#analogText2 {
+    font-family: "Century", sans-serif;
+}
+
+
+
+
