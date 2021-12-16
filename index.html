@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>AkselKP's Homepage</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="headline" id="akselkp" onclick="window.location = 'index.html'">AkselKP's Homepage</h1>
+      <h2>Here you can keep an eye on my projects!</h2>
+      <a href="https://github.com/AkselKP" target="_blank" id="btnGithub">View on GitHub</a>
+    </header>
+    <main>
+      <div class="posts">
+        <section id="post5">
+          <h3 class="postTitle" id="portfolio">Personal portfolio</h3>
+          <a href="projects/portfolio/index.html" target="_blank" class="btn btnPortfolio">View project</a>
+          <div class="images grid2x2" id="portfolioImages">
+            <figure>
+              <img class="image" id="portfolioHome" onclick="imgEnlarge(this)" src="images/portfolio/portfolioHome.PNG" alt="Screenshot of the portfolio's home page">
+              <figcaption class="imgText">Home page</figcaption>
+            </figure>
+            <figure>
+              <img class="image" id="portfolioWork" onclick="imgEnlarge(this)" src="images/portfolio/portfolioWork.PNG" alt="Screenshot of the portfolio's work page">
+              <figcaption class="imgText">Work page</figcaption>
+            </figure>
+            <figure>
+              <img class="image" id="portfolioAbout" onclick="imgEnlarge(this)" src="images/portfolio/portfolioAbout.PNG" alt="Screenshot of the portfolio's about page">
+              <figcaption class="imgText">About page</figcaption>
+            </figure>
+            <figure>
+              <img class="image" id="portfolioContact" onclick="imgEnlarge(this)" src="images/portfolio/portfolioContact.PNG" alt="Screenshot of the portfolio's contact page">
+              <figcaption class="imgText">Contact page</figcaption>
+            </figure>
+          </div>
+          <p class="postDescription">My first attempt at a personal portfolio. Containing some work I have done earlier, as well as an about me page, contact page and a resume page. The portfolio has not been updated in a couple months.</p>
+        </section>
+        <section id="post4">
+          <h3 class="postTitle" id="kragsetIt">Kragset IT</h3>
+          <a href="projects/Kragset-IT/index.html" target="_blank" class="btn btnKragsetIt">View project</a>
+          <div class="images grid1x1" id="kragsetITImages">
+            <figure>
+              <img class="image" id="kragsetITHome" onclick="imgEnlarge(this)" src="images/kragsetIT/kragsetIT.PNG" alt="Screenshot of the kragset IT's home page">
+              <figcaption class="imgText">Landing page</figcaption>
+            </figure>
+          </div>
+          <p class="postDescription">This project is the result of a task I was given at school. I created a graphical profile containing colors, fonts and selfmade logos for an imaginary business. </p>
+        </section>
+        <section id="post3">
+          <h3 class="postTitle" id="pvsBiblio">PVS library</h3>
+          <a href="projects/PVSbibliotek/index.html" target="_blank" class="btn btnPVSBiblio">View project</a>
+          <div class="images grid2x1" id="PVSbiblioImages">
+            <figure>
+              <img class="image" id="PVSbiblioHome" onclick="imgEnlarge(this)" src="images/PVSbiblio/PVSbiblioHome.PNG" alt="Screenshot of the PVS libary's home page">
+              <figcaption class="imgText">Home page</figcaption>
+            </figure>
+            <figure>
+              <img class="image" id="portfolioWork" onclick="imgEnlarge(this)" src="images/PVSbiblio/PVSbiblioAbout.PNG" alt="Screenshot of the PVS library's about page">
+              <figcaption class="imgText">About page</figcaption>
+            </figure>
+          </div>
+          <p class="postDescription">This project is the first fully working responsive page I have made. This was a task given to me at school, which was to create a site for our schools library. This site contains information about the library like; services, location, events and more!</p>
+        </section>
+        <section id="post2">
+          <h3 class="postTitle" id="snakeTitle">Snake</h3>
+          <a href="projects/snake/index.html" target="_blank" class="btn btnSnake">View project</a>
+          <div class="images grid1x1" id="snakeImages">
+            <figure>
+              <img class="image" id="snakeHome" onclick="imgEnlarge(this)" src="images/snake/snake.PNG" alt="Screenshot of the Snake's game page">
+              <figcaption class="imgText">Game page</figcaption>
+            </figure>
+          </div>
+          <p class="postDescription">Creating this game was given to me as a task at school when I was learning javascript. I didn't fully finish it, but it is somewhat working. However it has a couple of bugs.</p>
+        </section>
+        <section id="post1">
+          <h3 class="postTitle" id="rSpillTitle">Math game</h3>
+          <a href="projects/regneSpill/index.html" target="_blank" class="btn btnMathGame">View project</a>
+          <div class="images grid1x1" id="mathGameImages">
+            <figure>
+              <img class="image" id="snakeHome" onclick="imgEnlarge(this)" src="images/mathGame/mathgame.PNG" alt="Screenshot of the Math game's game page">
+              <figcaption class="imgText">Game page</figcaption>
+            </figure>
+          <p class="postDescription" id="margTop">I used a tutorial to create this game when I had just started learning javascript. The game gives you a multiplication calculation that you have to answer before the box containing the equation hits the top of the input field.</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <h4 class="footerTitle" id="backTop" onclick="topFunction()">Go to top</h4>
+      <p class="footerInfo">akselkpp@gmail.com</p>
+      <p id="creds">Theme inspired by Jekyll</p>
+    </footer>
+  </body>
+</html>
