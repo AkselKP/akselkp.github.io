@@ -1,0 +1,74 @@
+/*
+!TICKET ER FOR STOR FOR MOBIL
+!DEN GRØNNE "TAKKE-TEKSTEN" KOMMER FOR LANGT NED
+*/
+
+@keyframes slideIn {
+    0% {
+        left: -110%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+section { 
+    background-color: #fff;
+    box-shadow: 2px 2px 10px;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    width: 420px;
+    height: 520px;
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    /*left: 50%;
+    top: -2%;
+    transform: translate(-50%, 2%); */
+    box-shadow: 0 0 15px 2px black;
+    animation: slideIn 1.5s alternate;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+section h1, h3{
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+p {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+h3 {
+   margin-top: 50px;
+   color: green;
+   font-size: 24px;
+}
+
+@media only screen and (max-width: 700px) {
+    section {
+        width: 350px;
+        height: 550px;
+    }
+    h3 {
+        position: relative;
+        margin-top: 0px;
+        top: -15px;
+    }
+    h2 {
+        margin-top: 0px;
+    }
+    h1 {
+        margin-bottom: 0px;
+    }
+}

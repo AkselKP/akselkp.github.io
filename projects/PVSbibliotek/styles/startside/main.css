@@ -1,0 +1,440 @@
+* {
+    font-family: sans-serif;
+
+}
+
+html {
+    background-color: #eee;
+}
+
+body {
+    margin: 0;
+    width: 99.72%;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    width: 100%;
+    height: 13vh; 
+    min-height: 80px;
+    background-color: #0073e6;
+    padding: 2px;
+    color: #fff;
+  /*  position: fixed;
+    top: 0;
+    z-index: 2;  */
+}
+
+.btnMer {
+    /*position: sticky;*/
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background: none;
+    border: none;
+    visibility: hidden;
+}
+
+.material-icons.mer:hover {
+    transform: scale(1.2);
+    background-color: rgba(155, 155, 155, 0.6);
+    color: #fff;
+    transition: 0.2s;
+}
+
+.material-icons.mer {
+    color: #fff; 
+    font-size: 36px;
+}
+
+.overskrift {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.annet {
+    font-size: 20px;
+    padding: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 35px;
+    float: right;
+}
+
+.annet:hover {
+    color: #ccc;
+    border-bottom: 3px solid #ccc;
+    transition: 0.2s;
+}
+
+.porsVgs {
+    float: left;
+    padding-left: 5px;
+    font-weight: bolder;
+}
+
+nav img {
+    float: left;
+    padding-top: 18px;
+    padding-left: 10px;
+    height: 50px;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+.opningstider {
+    margin-right: 40px; 
+}
+
+.hVelkommen {
+    text-align: center;
+}
+main {
+    margin: 50px;
+    margin-right: 150px;
+    margin-left: 140px;
+}
+
+.hovedside {
+    position: relative;
+    background: #fff;
+    border: 2px solid lightgrey;
+    padding: 5px;
+    width: 86%;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+li {
+    margin-bottom: 20px; 
+}
+
+ul a {
+    font-weight: bold;
+    color: rgb(45, 46, 135);
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: rgb(45, 46, 255);
+    transition: 0.2s;
+}
+
+.hovedside img {
+    float: left;
+    height: 100%;
+} 
+
+.hovedside h3{
+    margin-top: 5px;
+    font-size: 32px;
+}
+
+.hovedside .tjenester {
+    width: 300px;
+    float: left;
+}
+
+.bredBilde {
+    width: 270px;
+    height: 200px;
+}
+
+.tynnBilde {
+    width: 200px;
+    height: 200px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.hovedside .anbefalinger {
+    width: 300px;
+}
+
+.hovedside .anbefalinger ul {
+    padding-bottom: 65px;
+}
+
+.test {
+     display: flex;
+    justify-content: center;
+    min-width: 100%;
+	max-width: 100%;
+}
+
+.tjenesterOgAnbefalinger h3 {
+    text-align: center;
+}
+
+.tjenesterOgAnbefalinger h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.tjenesterOgAnbefalinger h3 a:hover {
+    color: #666666;
+}
+
+.container {
+	justify-content: center;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.artikler  {
+    position: relative;
+    margin: 20px;
+    background: #fff;
+    border: 2px solid lightgrey;
+    width: 25%;
+    padding: 10px;
+}
+
+.artikler:hover {
+    border: 2px solid #999999;
+    transition: 0.4s;
+}
+
+.artikler img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.artikler a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.overskrift2 {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.dato {
+    color: #4d4d4d;    
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #0066cc;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #ccc;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+  }
+
+  #main {
+    transition: margin-right .5s;
+    padding: 16px;
+  }
+
+  
+footer {
+    position: relative;
+    bottom: 0;
+    justify-content: center; 
+	min-width: 100.3%;
+	max-width: 100%;
+	color: white;
+	margin-top: 30px;
+    background-color: #404040;
+}
+
+footer h2 {
+    text-shadow: 2px 2px gray;
+}
+
+.besoksadresse {
+    padding: 50px;
+}
+
+.postadresse {
+	padding: 50px;
+}
+
+.tlfogepost {
+    padding: 50px;
+}
+.disclaimer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+}
+
+.disclaimer button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    color: rgb(116, 234, 255);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(116,234,255);
+}
+
+.disclaimer button:hover {
+    color: blue;
+    transform: scale(1.05);
+    border-bottom: 2px solid blue;
+    transition: 0.2s;
+}
+
+@media only screen and (min-width: 800px) {
+    footer {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .hovedside .anbefalinger { float: left; }
+    .hovedside {display: flex; }
+    .container { display: flex; }
+}
+@media only screen and (max-width: 1500px) {
+    .artikler{
+        width: 40%;
+        min-width: 305px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+  
+@media only screen and (max-width: 900px) {
+    nav {
+        height: 90px;
+        width: 100%;
+    }
+    .hVelkommen {
+        position: relative;
+        width: 380px;
+        font-size: 28px;
+        margin: 0;
+        padding-bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hovedside {
+        padding-right: 20px;
+        margin-left: 12px;
+        position: relative;
+    }
+    .hovedside img {
+        float: left;
+        height: 40%;
+        width: 100%;
+        position: relative;
+        left: 2%;
+    }
+    .artikler {
+        position: relative;
+        margin-left: 6px;
+    }
+    .navItems {
+        visibility: hidden;
+    }
+    .btnMer {
+        visibility: visible;
+        top: 40px;
+        cursor: pointer;
+    }
+    .material-icons.mer {
+        position: absolute;
+        opacity: 1;
+        right: 5%;
+        top: 5%;
+    }
+}
+
+@media only screen and (max-width: 447px) {
+   /* #velkommen {
+        top: -140px;   
+    }
+    .hovedside {
+        top: -110px;
+    }
+    .artikler {
+        top: -110px;
+    } 
+    
+    
+    */
+}
+
+@media only screen and (max-width: 1500px) { 
+    .hovedside img {
+        float: left;
+        height: 40%;
+        position: relative;
+    }
+
+}
+
+@media only screen and (min-width: 1550px) { 
+    nav {
+        height: 10vh;
+    }
+    .navItems {
+        padding-top: 5px;
+    }
+    .hovedside {
+        width: 82.6%;
+        padding-right: 20px;
+    }
+}
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+
+
+
+
+
+
+
+

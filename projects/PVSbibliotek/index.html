@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/startside/main.css">
+        <link rel="icon" href="bilder/favicon.svg">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Porsgrunn Vidergående Bibliotek</title>
+    </head>
+    <body>
+        <header>
+            <nav id="nav">
+                <a href="index.html">
+                <img src="bilder/book-icon.svg" alt="bok ikon">
+                <h1 class="overskrift porsVgs">Porsgrunn vgs<br>bibliotek</h1>
+                </a>
+                <div class="navItems">
+                    <a href="opningstider.html">
+                        <h2 class="overskrift annet opningstider">Åpningstider</h2>
+                    </a>
+                    <a href="tjenester.html">
+                        <h2 class="overskrift annet tjenester">Tjenester</h2>
+                    </a>
+                    <a href="arrangementer.html">
+                        <h2 class="overskrift annet arrangementer">Arrangementer</h2>
+                    </a> 
+                    <a href="omOss.html">
+                        <h2 class="overskrift annet om">Om oss</h2>
+                    </a>
+                </div>
+                <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                          <a href="opningstider.html">
+                        <h2 class="overskrift annet opningstider">Åpningstider</h2>
+                    </a>
+                    <a href="tjenester.html">
+                        <h2 class="overskrift annet tjenester">Tjenester</h2>
+                    </a>
+                    <a href="arrangementer.html">
+                        <h2 class="overskrift annet arrangementer">Arrangementer</h2>
+                    </a> 
+                    <a href="omOss.html">
+                        <h2 class="overskrift annet om">Om oss</h2>
+                    </a>
+                    <a href="reserver.html">
+                        <h2 class="overskrift annet reserver">Reserver bok</h2>
+                    </a>
+                </div>
+                <div id="main">  
+                    <button class="btnMer" onclick="openNav()"><i class="material-icons mer">reorder</i></button> 
+                </div>
+            </nav>
+        </header>
+        <main>
+                <h1 class="hVelkommen">Velkommen til Porsgrunn vidergående bibliotek!</h1>
+            <div class="test">
+                <article class="hovedside tjenesterOgAnbefalinger">
+                    <img id="bibliotekBildeSor" src="bilder/bibliotek.png" alt="bilde av biblioteket med åpningstider skrevet på">
+                    <div class="tjenester">
+                        <h3 class="overskrift3 tjenester"><a href="tjenester.html">Tjenester</a></h3>
+                        <ul>
+                            <li>hjelp til litteratursøking og til å finne gode, relevante kilder til oppgaven din</li> <!--validator liker ikke <br> i en ul-->
+                            <li>veiledning til fordypningsemne og Extended essay</li>
+                            <li>råd når du skriver oppgave med tanke på problemstilling, oppbygging, kildebruk og utforming av litteraturliste</li>
+                            <li>bokprat og tips til gode bøker</li>
+                            <li>hjelp til printing, kjøp av kopier og kopibrikker</li>
+                           <li><a href="reserver.html">låne bøker</a></li>
+                        </ul>
+                    </div>
+                    <div class="anbefalinger">
+                        <h3 class="overskrift3 anbefalinger">Anbefalinger</h3>
+                        <ul>
+                            <li>Eleanor Oliphant har det helt fint av Honeyman, Gail 11. juni 2020</li>
+                            <li>Perlefarmen av Marklund, Liza 5. juni 2019</li>
+                            <li>Slakteren i Liseleje av Riel, Ane 22. mai 2019</li>
+                            <li>Slagside av Sævareid, Heidi 21. mai 2019</li>
+                            <li>Hver morgen dyppet min søster brystene i isvann for å bli pen av Sortland, Bjørn 15. mai 2019</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <div class="container">
+                <article class="artikler artikkel1">
+                    <img class="tynnBilde" src="bilder/rundBokhylle.JPG" alt="bilde av en rund bokhylle">
+                    <h3 class="artikell overskrift2">Reserver en bok</h3>    
+                    <div class="dato">nov 26, 2020</div>
+                    <p>Hvis du ikke har muligheten til å låne en bok akkurat nå, kan du reservere en bok <a href="reserver.html">her.</a></p>
+                </article>
+                <article class="artikler artikkel2">
+                    <img class="tynnBilde" src="bilder/bokHylle.JPG" alt="bilde av en bokhylle">
+                    <h3 class="artikell overskrift2">Utvalg</h3>    
+                    <div class="dato">nov 14, 2020</div>
+                    <p>På biblioteket er det massevis av forskjellig bøker, lydbøker og filmer du kan låne.</p>   
+                </article>
+                <article class="artikler artikkel3">
+                     <img class="bredBilde" src="bilder/spillerLudo.JPG" alt="bilde av tre personer som spiller og koser seg sammen"> <!--Bytt bilde mellom uno og ludo-->
+                    <h3 class="artikell overskrift2">Spill og aktiviter</h3>    
+                    <div class="dato">jan 2, 2021</div>
+                    <p>På biblioteket kan du spille forskjellige spill som ludo og uno.</p>   
+                </article>
+            </div>
+        </main>
+        <footer>
+            <div class="besoksadresse">
+                <h2>Besøksadresse</h2>
+                <p>
+                    Porsgrunn videregående skole<br><br>
+                    Avd. Nord: Kjølnes Ring 58, <br>3918 Porsgrunn<br><br>
+                    Avd. Sør: Kjølnes Ring 20, <br>3918 Porsgrunn
+                </p>
+            </div>
+            <div class="postadresse">
+                <h2>Postadresse</h2>
+                <p>
+                    Postboks 2844<br><br>
+                    3702 Skien
+                </p>
+            </div>
+            <div class="tlfogepost">
+                <h2>Telefon</h2>
+                <p>35 91 75 00</p>
+        
+                <h2>E-post</h2>
+                <p>porsgrunn.vgs@vtfk.no <br>eDialog - <br>send sikker digital post</p>
+            </div>
+            <div class="disclaimer">
+                <p>Skoleprosjekt<br><button id="btnOmMeg">Aksel Pleym</button></p>
+            </div>  
+        </footer>
+        <script src="scripts/startside/script.js"></script>
+    </body>
+</html>
