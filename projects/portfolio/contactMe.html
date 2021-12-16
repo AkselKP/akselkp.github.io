@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles/sider.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="icon" href="bilder/favicon.svg">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>AKP - Contact</title>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <h3 class="nav navOverskrift work"><a href="work.html">work</a></h3>
+                <h3 class="nav navOverskrift contact"><a href="index.html">home</a></h3>
+                <a href="index.html"><img id="imgLogo" src="bilder/navLogo.svg" alt="akp logo"></a>
+                <h3 class="nav navOverskrift about"><a href="about.html">about</a></h3>
+                <h3 class="nav navOverskrift resume"><a href="resume.html">resume</a></h3>
+                <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                          <a href="work.html">
+                        <h2 class="dropdown menuWork">work</h2>
+                    </a>
+                    <a href="contactMe.html">
+                        <h2 class="dropdown menuContact">contact</h2>
+                    </a>
+                    <a href="about.html">
+                        <h2 class="dropdown menuAbout">about</h2>
+                    </a> 
+                    <a href="resume.html">
+                        <h2 class="dropdown menuResume">resume</h2>
+                    </a>
+                    <a href="index.html">
+                        <h2 class="dropdown menuHome">home</h2>
+                    </a>
+                </div>
+                <div id="main">  
+                    <button class="btnMer" onclick="openNav()"><em class="material-icons mer">menu</em></button> 
+                </div>
+            </nav>
+        </header>        
+        <main>
+            <h2 class="hoved mainOverskrift contactMe">Contact Me</h2>
+            <div class="container">
+            <div class="hoved tekst">
+                <div id="vid">
+                    <video autoplay loop>
+                        <source src="bilder/email.mp4" type="video/mp4">
+                        akselbyt@gmail.com
+                    </video>
+                </div>
+            </div>
+            </div>
+           <!-- <div id="contactForm" class="form contact">
+                <form>
+                    <h3 class="formClose" onclick="hide()">&times;</h3>
+                    <h3 class="formOverskrift">contact me (WIP)</h3>
+    
+                    <div id="knapper">
+                        <p id="btnSendInn" class="knapp sendInn">send</p>
+                        <p id="btnReset" class="knapp nullstill">reset</p>
+                    </div>
+    
+                    <h4 class="formName">full name:</h4>
+                    <label for="inpName">full name</label>
+                    <input type="text" id="inpName" name="name">
+    
+                    <h4 class="formEmail" name="email">email adress:</h4>
+                    <label for="inpEmail">email</label>
+                    <input type="text" id="inpEmail">
+    
+                    <h4 class="formMsg" name="msg">message:</h4>
+                    <label for="inpMsg">message</label>
+                    <input type="text" id="inpMsg">
+                    <span class="validity"></span>
+                </form>
+                </div> -->
+            <div class="sirkler">
+                <div class="circles circle1"></div>
+                <div class="circles circle2"></div>
+                <div class="circles circle3"></div>
+                <div class="circles circle4"></div>
+                <div class="circles circle5"></div>
+                <div class="circles circle6"></div>
+                <div class="circles circle7"></div>
+                <div class="circles circle8"></div>
+                <div class="circles circle9"></div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="script/autoplay.js"></script>
+        <script src="script/main.js"></script>
+    </body>
+</html>

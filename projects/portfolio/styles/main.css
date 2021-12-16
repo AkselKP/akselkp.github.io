@@ -1,0 +1,603 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+
+body {
+    margin: 0;
+    overflow: hidden; /*auto*/
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-bottom: 3px solid #19C3DA;
+    justify-content: center;
+    display: flex;
+    z-index: 10;
+    transition: 0.4s;
+}
+
+nav img {
+    width: 120px;
+    height: 120px;
+    margin-right: 150px;
+    margin-left: 100px;
+    transition: 0.4s;
+} 
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav .navOverskrift {
+   margin-right: 50px;
+   align-self: center;
+   font-size: 32px;
+   transition: 0.2s; /*Denne gjør sånn at når du ikke hovrer over element lenger vil den gå SMOOTH tilbake til vanlig*/
+   font-weight: normal;
+}
+
+nav .work {
+    margin-left: 150px; /* 166px - Av en eller annen grunn vil det ikke funke helt med justify-content center, de tblir ikke nøyaktig midt*/
+}
+
+nav .resume {
+    margin-right: 150px;
+}
+
+nav .navOverskrift:hover {
+    transform: scale(1.1);
+    color: #F05454;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #F05454;
+    transition: 0.2s;
+}
+
+nav:hover{
+    height: 80px;
+    transition: 0.4s;
+}
+
+main {
+    justify-content: center;
+}
+
+.hovedside {
+    position: relative;
+    top: 15%;
+    z-index: 2;
+    animation: fade-in 2s 0ms ease 1 both;
+}
+
+.hovedside img {
+    position: relative;
+    top: 15%;
+}
+
+.mainOverskrift {
+    color: #F05454;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.mainTekst {
+    margin-top: 5px;
+    font-size: 22px;
+    width: 300px;
+}
+
+#imgAksel {
+    margin-top: 33px;
+    margin-left: 80px; /*Fucker opp på mobil i think*/
+   /* width: 280px; */
+    height: 415px;
+    border: 4px solid #19C3DA; /*#F05454*/
+    border-radius: 5px;
+}
+
+#btnMer {
+    margin-top: 5px;
+    font-size: 36px;
+    background-color: #F05454;
+    width: 180px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+#btnMer:hover {
+    width: 238px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid #19C3DA;
+    transition: 0.2s;
+}
+
+/* SIRKLER */
+.circles {
+    background-color: #F05454;
+    opacity: 0.1;
+    z-index: -1;
+    position: fixed; 
+    width: 100px;
+    height: 100px;
+    -webkit-animation: vibrate-1 1s 0ms ease infinite both;
+	animation: vibrate-1 1s 0ms ease infinite both;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes vibrate-1 {
+	0%,
+	to {
+		-webkit-transform: translate(0);
+		transform: translate(0)
+	}
+	20% {
+		-webkit-transform: translate(-1px, 1px);
+		transform: translate(-1px, 1px)
+	}
+	40% {
+		-webkit-transform: translate(-1px, -1px);
+		transform: translate(-1px, -1px)
+	}
+	60% {
+		-webkit-transform: translate(1px, 1px);
+		transform: translate(1px, 1px)
+	}
+	80% {
+		-webkit-transform: translate(1px, -1px);
+		transform: translate(1px, -1px)
+	}
+}
+
+.circle1 {
+    top: 4%;
+    left: -2%;
+    width: 180px;
+    height: 180px;
+}
+
+.circle2 {
+    top: 4%;
+    right: -2%;
+    background-color: #19C3DA;
+}
+
+.circle3 {
+    top: 42%;
+    left: 8%;
+    width: 120px;
+    height: 120px;
+    background-color: #19C3DA;
+}
+
+.circle4 {
+    top: 71%;
+    left:  1%;
+    width: 130px;
+    height: 130px;
+}
+
+.circle5 {
+    top: 54%;
+    right: 5%;
+    width: 80px;
+    height: 80px;
+    background-color: #19C3DA;
+}
+
+.circle6 {
+    top: 70%;
+    right: 25%;
+    width: 150px;
+    height: 150px;
+}
+
+.circle7 {
+        top: 15%;
+        right: 15%;
+        width: 150px;
+        height: 150px;
+}
+
+.circle8 {
+    top: 15%;
+    left: 24%;
+    width: 130px;
+    height: 130px;
+    background-color: #19C3DA;
+}
+
+.circle9 {
+    width: 80px;
+    height: 80px;
+    top: 85%;
+    left: 35%;
+    background-color: #19C3DA;
+}
+
+.sirkler {
+    display: normal;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+    animation: fade-in 6s 0ms ease 1 both;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    margin-right: 40px;
+    transition: 0.2s;
+    margin-bottom: 0;
+    bottom: -50px;
+    position: relative;
+}
+
+footer #imgFacebook {
+    margin-left: 20px;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#imgEmail {
+    width: 60px;
+    height: 60px;
+    float: right;
+    bottom: 10px;
+}
+
+.form {
+    position: relative;
+    bottom: -320px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#formContact {
+    opacity: 0;
+    transition: 1s;
+    z-index: 3;
+}
+
+#knapper {
+    float: right;
+    margin-top: 47px;
+}
+
+.form p {
+    background-color: #F05454;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 28px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.form p:hover {
+    height: 70px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #19C3DA;
+    transition: 0.2s;
+}
+
+form {
+    background-color: #F3F3F3;
+    border: 5px solid #19C3DA;
+    box-shadow: 0 0 20px black;
+    width: 750px;
+    height: 550px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form label {
+    display: none;
+}
+
+form .formOverskrift {
+    text-align: center;
+    font-weight: bolder;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 38px;
+}
+
+form h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+form .formClose {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    font-size: 52px;
+    color: #F05454;
+    transition: 0.2s;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    float: right;
+}
+
+form .formClose:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 0.2s;
+}
+
+form input {
+    width: 70%;
+    height: 30px;
+    background-color: #fff;
+    color: #19C3DA;
+    padding: 5px;
+    border: 4px solid #F05454;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+form #inpMsg {
+    width: 97.5%;
+    height: 185px; 
+}
+
+html {
+    background-color: #F3F3F3;
+}
+
+.sidebar {
+    height: 0;
+    width: 100%;
+    /*relative*/
+    position: absolute;
+    top: 0px;
+    right: 0;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+    display: block;
+    transition: 0.5s;
+    z-index: 2;
+  }
+
+  .sidebar h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      border-bottom: 2px solid black;
+  }
+
+  .sidebar .menuHome {
+      border-bottom: none;
+  }
+  
+  .sidebar a {
+    padding: 0px;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #F05454;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .sidebar .closebtn {
+    font-size: 36px;
+  }
+
+  #main {
+    transition: margin-right .5s;
+    padding: 16px;
+    position: absolute;
+    right: 10px;
+  }
+
+  #main button {
+      border: none;
+      background: transparent;
+  }
+
+  .material-icons.mer {
+      font-size: 38px;
+  }
+
+  #main  button:hover {
+      cursor: pointer;
+  }
+
+
+/*
+orientation: portrait
+orientation: landscape
+*/
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+/**Mobil*/
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        text-align: center;
+    }
+    .mainTekst {
+        position: relative;
+        text-align: left;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+    }
+    .mainOverskrift {
+        margin-top: 80px;
+    }   
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+}
+
+.hovedside img {
+    position: relative;
+    top: 15%;
+}
+@media screen and (min-width: 1600px) {
+    .mainOverskrift {
+        font-size: 56px;
+    }
+    
+    .mainTekst {
+        font-size: 24px;
+        width: 300px;
+    }
+    
+#imgAksel {
+    top: 20%;
+    height: 510px;
+}
+}
+
+
+@media screen and (min-width: 600px) {
+    main {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .hovedside .mainTekst {
+        font-size: 18px;
+        width: 250px;
+        text-align: center;
+    }
+    #formContact {
+        visibility: hidden;
+        display: none;
+    }
+    footer {
+        text-align: center;
+    }
+    footer img {
+        margin-bottom: 15px;
+    }
+    #imgEmail {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav #main {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/**iPads & tablets*/
+@media screen and (max-width: 768px) {
+    nav .navOverskrift {
+        display: none;
+        visibility: hidden;
+    }
+    body {
+        overflow-y: auto;
+    }
+    .circle8 {
+        display: none;
+    }
+    .hovedside #imgAksel {
+        margin-left: 10px;
+    }
+    nav img {
+        position: absolute; 
+        left: 20px;
+        margin-left: 0;
+    }
+}
+
+/**Small screens, laptops*/
+@media screen and (max-width: 1024px) {
+    nav .navOverskrift {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    nav img {
+        margin-right: 50px;
+        margin-left: 50px; 
+    }
+    .hovedside, .hovedside img {
+        top: 10%;
+    }
+    footer img {
+        width: 40px;
+        height: 40px;
+    }
+    footer #imgEmail {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/**Dekstops, large screens*/
+@media screen and (max-width: 1200px) {
+    form {
+        width: 70%;
+        height: 100%;
+    }
+    form #inpMsg {
+        height: 130px;
+    }
+}
+
+/*Extra large screens, tv*/
+@media screen and (min-width: 1201px) {
+
+}
+
+

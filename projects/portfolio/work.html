@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!--PRELOADS-->
+        <link rel="preload" href="bilder/Kamera-min.jpg" as="image">
+        <link rel="preload" href="bilder/Elever_Pa_PCer-min.jpg" as="image">
+        <link rel="preload" href="bilder/DSC_0095-min.JPG" as="image">
+        <link rel="preload" href="bilder/UIT-Poster-min.png" as="image">
+       <!-- <link rel="preload" href="videoer/Aksel-instagramVideo.mp4" as="video">
+        <link rel="preload" href="videoer/MusikkvideoFerdig.mp4" as="video">
+        <link rel="preload" href="videoer/Nyhetsreportasje-Aksel.mp4" as="video"> -->
+
+        <link rel="stylesheet" href="styles/sider.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="icon" href="bilder/favicon.svg">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="styles/modal.css">
+
+        <title>AKP - Work</title>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <h3 class="nav navOverskrift work"><a href="index.html">home</a></h3>
+                <h3 class="nav navOverskrift contact"><a href="contactMe.html">contact</a></h3>
+                <a href="index.html"><img id="imgLogo" src="bilder/navLogo.svg" alt="akp logo"></a>
+                <h3 class="nav navOverskrift about"><a href="about.html">about</a></h3>
+                <h3 class="nav navOverskrift resume"><a href="resume.html">resume</a></h3>
+                <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                          <a href="work.html">
+                        <h2 class="dropdown menuWork">work</h2>
+                    </a>
+                    <a href="contactMe.html">
+                        <h2 class="dropdown menuContact">contact</h2>
+                    </a>
+                    <a href="about.html">
+                        <h2 class="dropdown menuAbout">about</h2>
+                    </a> 
+                    <a href="resume.html">
+                        <h2 class="dropdown menuResume">resume</h2>
+                    </a>
+                    <a href="index.html">
+                        <h2 class="dropdown menuHome">home</h2>
+                    </a>
+                </div>
+                <div id="main">  
+                    <button class="btnMer" onclick="openNav()"><em class="material-icons mer">menu</em></button> 
+                </div>
+            </nav>
+        </header>        
+        <main>
+            <h2 class="hoved mainOverskrift work">Work</h2>
+            <div class="hoved projects">
+                <h3 class="hoved altOverskrift Websites">Websites</h3>
+                <p class="hoved altUndertekst Websites">I am still fairly new to this, but here are some websites that I have coded from scratch! </p>
+                <div class="hoved prosjekter websites">
+                    <div class="kortContainer">
+                        <article id="card-library" class="cards websites card-1">
+                            <img id="library-img" class="card-img card1" src="bilder/bibliotekSide-min.PNG" alt="">
+                            <h4 class="card-overskrift card1">Library</h4>
+                            <p class="card-undertekst card1">Library website for Porsgrunn High School. School Project</p>
+                            <h5 class="card-view card1"><a href="https://webkode.skit.no/~aks3008/PVSbibliotek/" target="_blank">View</a></h5>
+                        </article>
+                        <article id="card-library2" class="cards websites card-2">
+                            <img id="library-img2" class="card-img card2" src="bilder/bibliotekSide-min.PNG" alt="">
+                            <h4 class="card-overskrift card2">Library</h4>
+                            <p class="card-undertekst card2">Library website for Porsgrunn High School. School Project</p>
+                            <h5 class="card-view card2"><a href="https://webkode.skit.no/~aks3008/PVSbibliotek/" target="_blank">View</a></h5>
+                        </article>
+                        <article id="card-library3" class="cards websites card-3">
+                            <img id="library-img3" class="card-img card3" src="bilder/bibliotekSide-min.PNG" alt="">
+                            <h4 class="card-overskrift card3">Library</h4>
+                            <p class="card-undertekst card3">Library website for Porsgrunn High School. School Project</p>
+                            <h5 class="card-view card3"><a href="https://webkode.skit.no/~aks3008/PVSbibliotek/" target="_blank">View</a></h5>
+                        </article>
+                    </div>
+                </div>
+                <h3 class="hoved altOverskrift photos">Photos</h3>
+                <p class="hoved altUndertekst photos">Here are some photos I have taken!</p>
+                <div class="hoved prosjekter photos">
+                    <div class="kortContainer">
+                        <article id="card-promo1" class="cards photos card-1">
+                            <img id="promotional-img" class="card-img card1" src="bilder/EleverPC-min.png" alt="">
+                            <h4 class="card-overskrift card1">Promotional Photo</h4>
+                            <p class="card-undertekst card1">Promontional photo for IKTM Porsgrunn High School.</p>
+                            <h5 class="card-view card1" id="view1">View</h5>
+                        </article>
+                        <article id="card-instagram" class="cards photos card-2">
+                            <img id="instagram-img" class="card-img card2" src="bilder/instagram1-min.png" alt="">
+                            <h4 class="card-overskrift card2">Instagram Photo</h4>
+                            <p class="card-undertekst card2">Private photo taken of a friend for his personal instagram.</p>
+                            <h5 class="card-view card2" id="view2">View</h5>
+                        </article>
+                        <article id="card-promo2" class="cards photos card-3">
+                            <img id="promotional2-img" class="card-img card3" src="bilder/Kamera-min.jpg" alt="">
+                            <h4 class="card-overskrift card3">Promotional Photo</h4>
+                            <p class="card-undertekst card3">Another promotional photo for IKTM Porsgrunn High School.</p>
+                            <h5 class="card-view card3" id="view3">View</h5>
+                        </article>
+                    </div>
+                </div>
+                <h3 class="hoved altOverskrift videos">Videos</h3>
+                <p class="hoved altUndertekst videos">Here are some videos I have made!</p>
+                <div class="hoved prosjekter videos">
+                    <div class="kortContainer video">
+                        <article id="card-promo3" class="cards videos card-1">
+                            <img id="promotional-vid" class="card-img card1" src="bilder/video_foto-min.PNG" alt="">
+                            <h4 class="card-overskrift card1">Promotional Video</h4>
+                            <p class="card-undertekst card1">Promotional video for IKTM Porsgrunn High School.</p>
+                            <h5 class="card-view card1" id="view4">Offline</h5>
+                        </article>
+                        <article id="card-musicvideo" class="cards videos card-2">
+                            <img id="music-vid" class="card-img card2" src="bilder/musikkvideo_thumgnail2-min.PNG" alt="">
+                            <h4 class="card-overskrift card2">Music Video</h4>
+                            <p class="card-undertekst card2">Musicvideo for “Talk It Out” - The Døør. <br>School Project</p>
+                            <h5 class="card-view card2" id="view5">Offline</h5>
+                        </article>
+                        <article id="card-news" class="cards videos card-3">
+                            <img id="news-img" class="card-img card3" src="bilder/nyhetsreportasje_thumbnail-min.PNG" alt="">
+                            <h4 class="card-overskrift card3">News Report</h4>
+                            <p class="card-undertekst card3">News report regarding Covid-19 and how it effects students.</p>
+                            <h5 class="card-view card3" id="view6">Offline</h5>
+                        </article>
+                    </div>
+                </div>
+                <h3 class="hoved altOverskrift other">Other</h3>
+                <p class="hoved altUndertekst other">Here are some other things I have done!</p>
+                <div class="hoved prosjekter other">
+                    <div class="kortContainer other">
+                        <article id="card-poster" class="cards other card-1">
+                            <img id="poster-img" class="card-img card1" src="bilder/UIT-Poster-min.png" alt="">
+                            <h4 class="card-overskrift card1">UIT Poster</h4>
+                            <p class="card-undertekst card1">Poster for “Ung i trafikken” deahttrip campaign.</p>
+                            <h5 class="card-view card1" id="view7">View</h5>
+                        </article>
+                        <article id="card-other2" class="cards other card-2">
+                            <img id="other2-img" class="card-img card2" src="bilder/musikkvideo_thumgnail2-min.PNG" alt="">
+                            <h4 class="card-overskrift card2">Other2</h4>
+                            <p class="card-undertekst card2"></p>
+                            <h5 class="card-view card2" id="view8">View</h5>
+                        </article>
+                        <article id="card-other3" class="cards other card-3">
+                            <img id="other3-img" class="card-img card3" src="bilder/nyhetsreportasje_thumbnail-min.PNG" alt="">
+                            <h4 class="card-overskrift card3">News Report</h4>
+                            <p class="card-undertekst card3">News report regarding Covid-19 and how it effects students.</p>
+                            <h5 class="card-view card3" id="view9">View</h5>
+                        </article> 
+                    </div>
+                </div>
+            </div>   
+            <div class="sirkler">
+                <div class="circles circle1"></div>
+                <div class="circles circle2"></div>
+                <div class="circles circle3"></div>
+                <div class="circles circle4"></div>
+                <div class="circles circle5"></div>
+                <div class="circles circle6"></div>
+                <div class="circles circle7"></div>
+                <div class="circles circle8"></div>
+                <div class="circles circle9"></div>
+            </div>
+                 <!-- The Modal -->
+                 <div id="myModal" class="modal">
+                    <span class="close">&times;</span> 
+                    <img class="modal-content" src="" id="img01" alt="placeholder">
+                    <div id="caption"></div>
+                  </div>
+        </main>
+        <footer>
+        </footer>
+        <script src="script/main.js"></script>
+        <script src="script/modal.js"></script>
+    </body>
+</html>

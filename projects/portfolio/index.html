@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+        <link rel="icon" href="bilder/favicon.svg">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Aksel K. Pleym - Work In Progress</title>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                    <h1 class="nav navOverskrift work"><a href="work.html">work</a></h1>
+                    <h1 class="nav navOverskrift contact"><a href="contactMe.html">contact</a></h1>
+                    <a href="index.html"><img id="imgLogo" src="bilder/navLogo.svg" alt="akp logo"></a>
+                    <h1 class="nav navOverskrift about"><a href="about.html">about</a></h1>
+                    <h1 class="nav navOverskrift resume"><a href="resume.html">resume</a></h1>
+                    <div id="mySidebar" class="sidebar">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                              <a href="work.html">
+                            <h2 class="dropdown menuWork">work</h2>
+                        </a>
+                        <a href="contactMe.html">
+                            <h2 class="dropdown menuContact">contact</h2>
+                        </a>
+                        <a href="about.html">
+                            <h2 class="dropdown menuAbout">about</h2>
+                        </a> 
+                        <a href="resume.html">
+                            <h2 class="dropdown menuResume">resume</h2>
+                        </a>
+                        <a href="index.html">
+                            <h2 class="dropdown menuHome">home</h2>
+                        </a>
+                    </div>
+                    <div id="main">  
+                        <button class="btnMer" onclick="openNav()"><em class="material-icons mer">menu</em></button> 
+                    </div>
+            </nav>
+        </header>
+        <main>
+            <div class="hovedside tekst">
+                <h3 class="hovedside mainOverskrift aksel">Hi. I'm Aksel!</h3>
+                <p class="hovedside mainTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia erat sit amet mollis aliquet. Donec faucibus sem a mi dictum euismod. Donec elementum risus mollis eros vestibulum vehicula.</p>
+                <button id="btnMer" onclick="redirect()" class="hovedside">more</button>
+            </div>
+            <div class="hovedside bilde">
+                <img id="imgAksel" src="bilder/aksel1-min.jpg" alt="Image of Aksel Pleym">
+            </div>
+            <div class="sirkler">
+                <div class="circles circle1"></div>
+                <div class="circles circle2"></div>
+                <div class="circles circle3"></div>
+                <div class="circles circle4"></div>
+                <div class="circles circle5"></div>
+                <div class="circles circle6"></div>
+                <div class="circles circle7"></div>
+                <div class="circles circle8"></div>
+                <div class="circles circle9"></div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer socialMedia">
+                <a href="https://www.facebook.com/Aksel.Kragset.Pleym/"><img id="imgFacebook" src="bilder/facebook.svg" alt="facebook icon"></a>
+                <a href="https://twitter.com/AkselPleym"><img id="imgTwitter" src="bilder/twitter.svg" alt="twitter icon"></a>
+                <a href="https://github.com/AkselKP"><img id="imgGithub" src="bilder/github.svg" alt="github icon"></a> 
+            </div>
+            <div class="footer mail">
+                <img id="imgEmail" onclick="redirectContact()" src="bilder/forward_to_inbox-24px.svg" alt="Send me an email!"> 
+            </div>  
+        </footer>
+        <!--<div id="formContact" class="form contact">
+            <form>
+                <h3 class="formClose" onclick="hide()">&times;</h3>
+                <h3 class="formOverskrift">contact me (WIP)</h3>
+
+                <div id="knapper">
+                    <p id="btnSendInn" class="knapp sendInn">send</p>
+                    <p id="btnReset" class="knapp nullstill">reset</p>
+                </div>
+
+                <h4 class="formName">full name:</h4>
+                <label for="inpName">full name</label>
+                <input type="text" id="inpName" name="name">
+
+                <h4 class="formEmail">email adress:</h4>
+                <label for="inpEmail">email</label>
+                <input type="text" id="inpEmail">
+
+                <h4 class="formMsg">message:</h4>
+                <label for="inpMsg">message</label>
+                <input type="text" id="inpMsg">
+                <span class="validity"></span>
+            </form>
+        </div> -->
+
+        <script src="script/main.js"></script>
+    </body>
+</html>
