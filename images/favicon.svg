@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 625px;
+        fill: #b5e853;
+        text-anchor: middle;
+        font-family: "Origin Tech Demo";
+      }
+    </style>
+  </defs>
+  <text id="A" class="cls-1" x="251" y="482"><tspan x="251">A</tspan></text>
+</svg>
