@@ -222,8 +222,14 @@ max-width: 600px;
   .grid3x1 {
     grid-template-columns: 1fr;
   }
-  .grid2x2 figure, .grid2x1 figure, .grid3x1 figure {
+  .grid2x1 {
+    grid-template-columns: 1fr;
+  }
+  .grid2x2 figure, .grid2x1 figure, .grid3x1 figure, .grid1x1 figure {
     margin: 5px;
+  }
+  .grid1x1 .image{
+    margin-top: 5px;
   }
   .images {
     width: 100%;
@@ -243,6 +249,7 @@ max-width: 600px;
     max-width: 100%;
   }
 }
+
 
 @media screen and (max-width: 800px) {
   header h1 {
@@ -269,16 +276,6 @@ max-width: 600px;
     margin-top: 15px;
     margin-bottom: 50px;
   }
- /* .images {
-    width: 100%;
-    margin-top: 15px;
-  }
-  .grid2x2 {
-    margin-bottom: 15px;
-  } 
-  .grid2x2 figure {
-    margin: 5px;
-  } */
   .grid1x1 {
     margin-bottom: 15px;
   }
