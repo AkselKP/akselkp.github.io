@@ -5,6 +5,20 @@ function topFunction() {
   });
 }
 
+function check() {
+  elements = document.getElementsByClassName("codeShowcase");
+  for (var i = 0; i < elements.length; i++) {
+      if (elements[i].style.color = "#b5e853") {
+        elements[i].color = "#666"
+      }
+      else if (elements[i].style.color = "#666"){
+        elements[i].color="#b5e853";
+      } 
+  }
+}
+
+
+
 /*function imgEnlarge(e){
 
   if(e.style.width=="100%" || e.style.width=="" ){
