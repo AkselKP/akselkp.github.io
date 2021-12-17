@@ -232,15 +232,18 @@ max-width: 600px;
   .gifs figure {
     margin: 5px;
     max-width: 100%;
+    width: 100%;
   }
   .gif{
     max-width: 100%;
+    width: 100%;
   }
   .grid2x2 {
     margin-bottom: 15px;
   } 
   details {
     max-width: 100%;
+    width: 100%;
   }
 }
 
