@@ -104,6 +104,17 @@ main {
   text-align: center;
 }
 
+.btnDownload {
+  float: left;
+}
+
+.req {
+  margin-top: 30px;
+  margin-left: 150px;
+  color: red;
+  cursor: pointer;
+}
+
 .btn:hover {
   color: var(--headline);
   outline: 2px solid var(--headline);
