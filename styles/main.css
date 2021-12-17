@@ -32,6 +32,7 @@ header {
  /* font-family: "Test"; */
 } 
 
+
 header h1 {
   font-size: 38px; /*38px*/
   line-height: 1.5;
@@ -104,6 +105,17 @@ main {
   text-align: center;
 }
 
+.btnDownload {
+  float: left;
+}
+
+.req {
+  margin-top: 30px;
+  margin-left: 150px;
+  color: red;
+  cursor: pointer;
+}
+
 .btn:hover {
   color: var(--headline);
   outline: 2px solid var(--headline);
@@ -117,6 +129,12 @@ main {
   max-width: 50%; /*50%*/
   margin-bottom: 5vw;
   /*text-align: center; */
+}
+
+.codeShowcase {
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(181 232 83 / 10%), 0 0 10px rgb(181 232 83 / 10%);
 }
 
 .grid2x2 {
@@ -160,6 +178,15 @@ figure:hover {
 .grid1x1 {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.codeShowcase {
+  transition: 0.5s ease;
+}
+
+.codeShowcase:hover {
+  cursor: pointer;
+  color: var(--headline);
 }
 
 @media screen and (max-width: 1200px) {
