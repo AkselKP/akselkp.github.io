@@ -1,3 +1,5 @@
+import time
+
 passord = input("\nSkriv inn passord: ")
 
 def numbCheck():    
@@ -17,4 +19,5 @@ and numbCheck() == True): # Inneholder tall?
 
 print(f"\n-----------------------------------\n Passordet ditt er godkjent\n Du har imøtekommet passordkravene\n-----------------------------------")
 
+time.sleep(3)
 

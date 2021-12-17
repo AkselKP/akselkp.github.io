@@ -1,9 +1,15 @@
 import random
+import time
 
-pin = []
-lengde = int(input("Hvor mange siffer skal pin-koden bestå av?: "))
+new = input("Vil du generere en pinkode?: ")
+while new != "N":
+    pin = []
+    lengde = int(input("Hvor mange siffer skal pin-koden bestå av?: "))
 
-for i in range(lengde):
-    pin.append(random.randint(1,10))
+    for i in range(lengde):
+        pin.append(random.randint(1,10))
 
-print(pin)
+    print(pin)
+    new = input("Vil du generere en til pinkode?: ")
+
+time.sleep(3)

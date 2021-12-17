@@ -24,7 +24,7 @@
           <h3 class="postTitle" id="hangman">Hangman game</h3>
           <a href="projects/hangman/py/hangman.py" download="projects/hangman/py/hangman.py" class="btn btnDownload btnHangman">Download game</a><p onclick="window.open( 'https:/www.python.org/downloads/', '_blank')" class="req">Python required</p>
           <details>
-            <summary class="codeShowcase" onclick="check()" id="showCode">Code</summary>
+            <summary class="codeShowcase" onclick="active(this)">Code</summary>
             <pre>
               <code class="language-python">
 import random
@@ -148,46 +148,243 @@ time.sleep(3)
               </code>
           </pre>
           </details>
-          <div class="images grid1x1" id="hangmanImages">
+          <div class="images gifs" id="hangmanImages">
             <figure>
-              
-              <figcaption class="imgText">Video showcasing the game</figcaption>
+              <img class="gif" id="hangmanI" onclick="imgEnlarge(this)" src="images/hangman/hangman.gif" alt="Gif of the hangman game">
+              <figcaption class="imgText">GIF showcasing the game</figcaption>
             </figure>
           </div>
-          <p class="postDescription"></p>
+          <p class="postDescription">A text based hangman game in python! Guess the word to win! </p>
         </section>
         <section id="post8">
           <h3 class="postTitle" id="mastermind">Mastermind game</h3>
           <a href="projects/mastermind/py/mastermind.py" download="projects/mastermind/py/mastermind.py" class="btn btnDownload btnMastermind">Download game</a><p onclick="window.open( 'https:/www.python.org/downloads/', '_blank')" class="req">Python required</p>
-          <div class="images grid1x1" id="mastermindImages">
+          <details>
+            <summary class="codeShowcase" onclick="active(this)">Code</summary>
+            <pre>
+              <code class="language-python">
+import random
+import time
+
+fargeListe = ["rød", "orange", "gul", "grønn", "turkis", "blå", "fiolett"]
+
+print(f"\nFargene som kan brukes er: {fargeListe}. INGEN DUPLIKATER")
+
+farger = [random.choice(fargeListe), random.choice(fargeListe), random.choice(fargeListe), random.choice(fargeListe)]
+
+# Sørger for at det ikke er noen duplikater i listen
+while farger[1] == farger[0]: 
+    farger[1] = random.choice(fargeListe)
+while farger[2] == farger[1] or farger[2] == farger[0]:
+    farger[2] = random.choice(fargeListe)
+while farger[3] == farger[2] or farger[3] == farger[1] or farger[3] == farger[0]:
+    farger[3] = random.choice(fargeListe)
+
+forsok = 0
+antallRiktigPlassert = 0
+
+#print(farger)
+
+while antallRiktigPlassert < 4 and forsok < 12:
+
+    forsok += 1
+    antallRiktig = 0
+    antallRiktigPlassert = 0
+    gjett = [input("\nGjett farge1: ").lower(), input("Gjett farge2: ").lower(), input("Gjett farge3: ").lower(), input("Gjett farge4: ").lower()]
+
+
+    # sjekker at det er oppgitt en gyldig verdi 
+    for i in range(len(gjett)):
+        if gjett[i] not in fargeListe:
+            print(f"\nFarge{i + 1} har en ugyldig farge!")
+            gjett[i] = input(f"Gjett farge{i + 1}: ").lower()
+
+
+    # sjekker etter riktig farger og riktig plassert
+    for i in range(len(gjett)):
+        if gjett[i] in farger:
+            antallRiktig +=1
+        if gjett[i] == farger[i]:
+            antallRiktigPlassert += 1
+
+    
+    if antallRiktigPlassert == 4:
+        print(f"\n-----------\n Riktig: {antallRiktigPlassert}\n-----------\n")
+    else:
+        print(f"\n----------------------------\nRiktig farger: {antallRiktig} \nRiktig plassert: {antallRiktigPlassert}\n----------------------------\n")
+
+print(f"---------------------\n Gratulerer, du vant!\n---------------------\n \nDu gjettet: {gjett} på {forsok} forsøk! \nFasiten var: {farger}\n")
+
+
+time.sleep(5)
+              </code>
+            </pre>
+          </details>
+          <div class="images gifs" id="mastermindImages">
             <figure>
-              
-              <figcaption class="imgText">Video showcasing the game</figcaption>
+              <img class="gif" id="mastermindI" onclick="imgEnlarge(this)" src="images/mastermind/mastermind.gif" alt="Gif of the mastermind game">
+              <figcaption class="imgText">GIF showcasing the game</figcaption>
             </figure>
           </div>
-          <p class="postDescription"></p>
+          <p class="postDescription">A text based mastermind game in python! Guess the colors and the correct order of them to win!</p>
         </section>
         <section id="post7">
           <h3 class="postTitle" id="passWd">Password generator</h3>
           <a href="projects/passwordTasks/py/passGen.zip" download="projects/passwordTasks/py/passGen.zip" class="btn btnDownload btnPasswordTasks">Download files</a><p onclick="window.open( 'https:/www.python.org/downloads/', '_blank')" class="req">Python required</p>
-          <div class="images grid1x1" id="passwdImages">
+          <details>
+            <summary class="codeShowcase" onclick="active(this)">Code</summary>
+            <pre>
+              <code class="language-python">
+import random
+import time
+
+// Pin code generator
+
+new = input("Vil du generere en pinkode?: ")
+while new != "N":
+    pin = []
+    lengde = int(input("Hvor mange siffer skal pin-koden bestå av?: "))
+
+    for i in range(lengde):
+        pin.append(random.randint(1,10))
+
+    print(pin)
+    new = input("Vil du generere en til pinkode?: ")
+
+time.sleep(3)
+
+
+// Password generator
+
+new = input("Vil du generere et passord?: ").lower()
+while new == "y":
+    lengde = int(input("Hvor mange tegn skal passordet bestå av?: "))
+    passord = []
+
+    for i in range(lengde):
+        passord.append(chr(random.randint(33, 127)))
+
+    print(passord)
+    new = input("Vil du generere et nytt passord?: ").lower()
+
+time.sleep(3)
+
+
+// Password requirments checker
+
+passord = input("\nSkriv inn passord: ")
+
+def numbCheck():    
+    for i in range(len(passord)):
+        if ord(passord[i]) in range (48,58): # 0-9
+            return True
+
+
+while not(len(passord) >= 8 # Minimum 8 tegn
+and not(passord.isalnum()) # Alfanumerisk?
+and not(passord.islower()) # Alle bokstaver små?
+and not(passord.isupper()) # Alle bokstaver store?
+and numbCheck() == True): # Inneholder tall? 
+
+    passord = input("\nUgyldig passord!\n\nDu må ha:\nMinimum 8 tegn\nBåde store og små bokstaver\nMinimum et spesialtegn\nMinimum et tall\n\nSkriv inn passord: ")
+
+
+print(f"\n-----------------------------------\n Passordet ditt er godkjent\n Du har imøtekommet passordkravene\n-----------------------------------")
+
+time.sleep(3)
+
+
+              </code>
+            </pre>
+          </details>
+          <div class="images grid3x1" id="passwdImages">
             <figure>
-              
-              <figcaption class="imgText">Password generator</figcaption>
+              <img class="gif" id="passwdPin" onclick="imgEnlarge(this)" src="images/passwdTasks/pinGen.gif" alt="Gif of the pin code generator">
+              <figcaption class="imgText">Pin code generator</figcaption>
+            </figure>
+            <figure>
+              <img class="gif" id="passwdPass" onclick="imgEnlarge(this)" src="images/passwdTasks/passGen.gif" alt="Gif of the password code generator">
+              <figcaption class="imgText">Password code generator</figcaption>
+            </figure>
+            <figure>
+              <img class="gif" id="passwdPin" onclick="imgEnlarge(this)" src="images/passwdTasks/passChecker.gif" alt="Gif of the password requirments checker">
+              <figcaption class="imgText">Password requirments checker</figcaption>
             </figure>
           </div>
-          <p class="postDescription"></p>
+          <p class="postDescription">Password & pin generator created using python and ASCII codes, as well as a password requirments checker.</p>
         </section>
         <section id="post6">
           <h3 class="postTitle" id="RPS">Rock Paper Scissors</h3>
           <a href="projects/RPS/py/RockPaperScissors.py" download="projects/RPS/py/RockPaperScissors.py" class="btn btnDownload btnRps">Download game</a><p onclick="window.open( 'https:/www.python.org/downloads/', '_blank')" class="req">Python required</p>
-          <div class="images grid1x1" id="RPSImages">
+          <details>
+            <summary class="codeShowcase" onclick="active(this)">Code</summary>
+            <pre>
+              <code class="language-python">
+import random
+
+ordliste = ["stein", "saks", "papir"]
+wins = 0
+tap = 0
+
+
+# Første mann til 3
+while wins < 3:
+
+    bot = random.choice(ordliste)
+    bruker = input("\nStein saks eller papir?: ").lower()
+    if bot == bruker:
+        print(f"\n-------------------------------------- \n Dere valgte begge {bot}! Prøv igjen! \n-------------------------------------- \n")
+
+    elif bot == "saks" and bruker == "stein":
+        wins += 1
+        print(f"\n------------------------------ \n Du vant! Boten valgte {bot}! \n------------------------------ \n")
+
+    elif bot == "stein" and bruker == "papir":
+        wins += 1
+        print(f"\n------------------------------ \n Du vant! Boten valgte {bot}! \n------------------------------ \n")
+
+    elif bot == "papir" and bruker == "saks":
+        wins += 1
+        print(f"\n------------------------------ \n Du vant! Boten valgte {bot}! \n------------------------------ \n")
+
+
+
+    elif bot == "stein" and bruker == "saks":
+        tap += 1
+        print(f"\n------------------------------ \n Du tapte! Boten valgte {bot}! \n------------------------------ \n")
+
+    elif bot == "saks" and bruker == "papir":
+        tap += 1
+        print(f"\n------------------------------- \n Du tapte! Boten valgte {bot}! \n------------------------------- \n")
+
+    elif bot == "papir" and bruker == "stein":
+        tap += 1
+        print(f"\n------------------------------- \n Du tapte! Boten valgte {bot}! \n------------------------------- \n")
+
+    else:
+        print("Error! Ugyldig verdi!")
+
+
+    if tap == 3:   
+        break  
+
+
+if wins == 3:
+    print("\n----------\n Du vant!\n----------\n")
+elif tap == 3:
+    print("\n-----------\n Du tapte!\n-----------\n")
+else: 
+    print("Error!")
+              </code>
+            </pre>
+          </details>
+          <div class="images gifs" id="RPSImages">
             <figure>
-              
-              <figcaption class="imgText">Video showcasing the game</figcaption>
+              <img class="gif" id="RPSi" onclick="imgEnlarge(this)" src="images/RPS/RPS.gif" alt="Gif of the rock paper scissors game">
+              <figcaption class="imgText">GIF showcasing the game</figcaption>
             </figure>
           </div>
-          <p class="postDescription"></p>
+          <p class="postDescription">A simple text based rock paper scissors game in python! First to 3, WINS!</p>
         </section>
         <section id="post5">
           <h3 class="postTitle" id="portfolio">Personal portfolio</h3>
@@ -257,6 +454,7 @@ time.sleep(3)
               <img class="image" id="snakeHome" onclick="imgEnlarge(this)" src="https://akselkp.github.io/images/mathGame/mathgame.PNG" alt="Screenshot of the Math game's game page">
               <figcaption class="imgText">Game page</figcaption>
             </figure>
+          </div>
           <p class="postDescription" id="margTop">I used a tutorial to create this game when I had just started learning javascript. The game gives you a multiplication calculation that you have to answer before the box containing the equation hits the top of the input field.</p>
         </section>
       </div>

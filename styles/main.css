@@ -12,6 +12,10 @@
   src: url("../fonts/TechnoBoard-519Ej.ttf")
   } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -110,6 +114,7 @@ main {
 }
 
 .req {
+  width: 150px;
   margin-top: 30px;
   margin-left: 150px;
   color: red;
@@ -131,10 +136,19 @@ main {
   /*text-align: center; */
 }
 
+details {
+  display: inline-block;
+}
+
 .codeShowcase {
   font-weight: 300;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(181 232 83 / 10%), 0 0 10px rgb(181 232 83 / 10%);
+}
+
+.grid3x1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid2x2 {
@@ -153,6 +167,7 @@ main {
   margin-bottom: 0;
   width: 80%;
 }
+
 
 .image {
   width: 100%;
@@ -189,17 +204,44 @@ figure:hover {
   color: var(--headline);
 }
 
+.gifs figure {
+max-width: 600px;
+}
+
+.gif {
+  max-width: 600px;
+}
+
+@media screen and (max-width: 1800px) {
+  .grid3x1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 1200px) {
-  .grid2x2 figure {
+  .grid3x1 {
+    grid-template-columns: 1fr;
+  }
+  .grid2x2 figure, .grid2x1 figure, .grid3x1 figure {
     margin: 5px;
   }
   .images {
     width: 100%;
     margin-top: 15px;
   }
+  .gifs figure {
+    margin: 5px;
+    max-width: 100%;
+  }
+  .gif{
+    max-width: 100%;
+  }
   .grid2x2 {
     margin-bottom: 15px;
   } 
+  details {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {

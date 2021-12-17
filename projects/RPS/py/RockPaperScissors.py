@@ -1,4 +1,5 @@
 import random
+import time
 
 ordliste = ["stein", "saks", "papir"]
 wins = 0
@@ -53,3 +54,6 @@ elif tap == 3:
     print("\n-----------\n Du tapte!\n-----------\n")
 else: 
     print("Error!")
+
+
+time.sleep(3)
