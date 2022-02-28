@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Storage data</title>
+  </head>
+  <body class="darkMode">
+    <p id="date" class="abs"></p>
+    <nav>
+        <h1>Storage Data Example Site</h1>
+        <div id="searchContainer">
+          <input id="searchbar" placeholder="Search for customer.." onfocus="this.value=''" onchange="searchBar()"><button type="submit" onclick="searchBar()"><i class="fa fa-search"></i></button>
+        </div>
+        <p id="searchErr"></p> 
+        <div id="theme">
+          <span id="btnDark" class="themeBtns" onclick="darkMode()">Dark</span> / <span id="btnLight" class="themeBtns" onclick="lightMode()">Light</span>
+        </div>
+    </nav>
+    <main>
+      <!--Customer01-->
+      <div class='customerContainer'>
+        <h2 class='customerName' class='darkMode' id='Customer01'>Customer01</h2>
+        <div class='serverContainer'>
+          <h2 class='serverName' class='darkMode'>Server01</h2>
+          <div class='cardContainer'>
+            <article class='card' class='darkMode'>
+              <h2 class='diskName'>Disk C<img class='diskIcon' src='images/hdd-outlined.svg'></h2> 
+                <div class='chart' data-percent='55' ><span class='percent'>55</span></div>
+                <h4 class='data date'>18. Feb 2022</h4>
+                <div class='dataContainer'>
+                  <h4 class='dataName totalStrg'>Total<span class='data gb totalAmnt'>247</span></h4>
+                  <h4 class='dataName freeStrg'>Free<span class='data gb freeAmnt'>54</span></h4>
+                  <h4 class='dataName status'>Status<span class='data statusStr'>Healthy</span></h4>
+                  <h4 class='dataName operational'>Operational<span class='data operationalStr'>OK</span></h4>
+                </div>
+              </article>
+              <article class='card' class='darkMode'>
+                <h2 class='diskName'>Disk F<img class='diskIcon' src='images/hdd-outlined.svg'></h2> 
+                  <div class='chart' data-percent='93' ><span class='percent'>93</span></div>
+                  <h4 class='data date'>18. Feb 2022</h4>
+                  <div class='dataContainer'>
+                    <h4 class='dataName totalStrg'>Total<span class='data gb totalAmnt'>1000</span></h4>
+                    <h4 class='dataName freeStrg'>Free<span class='data gb freeAmnt'>70</span></h4>
+                    <h4 class='dataName status'>Status<span class='data statusStr'>Healthy</span></h4>
+                    <h4 class='dataName operational'>Operational<span class='data operationalStr'>OK</span></h4>
+                  </div>
+                </article>
+          </div>
+        </div>
+      </div>
+      
+      <!--Customer02-->
+      <div class='customerContainer'>
+        <h2 class='customerName' class='darkMode' id='Customer02'>Customer02</h2>
+        <div class='serverContainer'>
+          <h2 class='serverName' class='darkMode'>Server02</h2>
+          <div class='cardContainer'>
+            <article class='card' class='darkMode'>
+              <h2 class='diskName'>Disk Q<img class='diskIcon' src='images/hdd-outlined.svg'></h2> 
+                <div class='chart' data-percent='13' ><span class='percent'>13</span></div>
+                <h4 class='data date'>17. Feb 2022</h4>
+                <div class='dataContainer'>
+                  <h4 class='dataName totalStrg'>Total<span class='data gb totalAmnt'>100</span></h4>
+                  <h4 class='dataName freeStrg'>Free<span class='data gb freeAmnt'>87</span></h4>
+                  <h4 class='dataName status'>Status<span class='data statusStr'>Healthy</span></h4>
+                  <h4 class='dataName operational'>Operational<span class='data operationalStr'>OK</span></h4>
+                </div>
+              </article>
+              <article class='card' class='darkMode'>
+                <h2 class='diskName'>Disk C<img class='diskIcon' src='images/hdd-outlined.svg'></h2> 
+                  <div class='chart' data-percent='63' ><span class='percent'>63</span></div>
+                  <h4 class='data date'>17. Feb 2022</h4>
+                  <div class='dataContainer'>
+                    <h4 class='dataName totalStrg'>Total<span class='data gb totalAmnt'>100</span></h4>
+                    <h4 class='dataName freeStrg'>Free<span class='data gb freeAmnt'>37</span></h4>
+                    <h4 class='dataName status'>Status<span class='data statusStr'>Healthy</span></h4>
+                    <h4 class='dataName operational'>Operational<span class='data operationalStr'>OK</span></h4>
+                  </div>
+                </article>
+          </div>
+        </div>
+        <div class='serverContainer'>
+          <h2 class='serverName' class='darkMode'>Server03</h2>
+          <div class='cardContainer'>
+            <article class='card' class='darkMode'>
+              <h2 class='diskName'>Disk T<img class='diskIcon' src='images/hdd-outlined.svg'></h2> 
+                <div class='chart' data-percent='78' ><span class='percent'>78</span></div>
+                <h4 class='data date'>18. Feb 2022</h4>
+                <div class='dataContainer'>
+                  <h4 class='dataName totalStrg'>Total<span class='data gb totalAmnt'>100</span></h4>
+                  <h4 class='dataName freeStrg'>Free<span class='data gb freeAmnt'>22</span></h4>
+                  <h4 class='dataName status'>Status<span class='data statusStr'>Healthy</span></h4>
+                  <h4 class='dataName operational'>Operational<span class='data operationalStr'>OK</span></h4>
+                </div>
+              </article>
+            </div>
+        </div>
+      </div>
+      
+      <!--Customer03-->
+      <div class='customerContainer'>
+        <h2 class='customerName' class='darkMode' id='Customer03'>Customer03</h2>
+        <div class='serverContainer'>
+          <h2 class='serverName' class='darkMode'>Server04</h2>
+          <div class='cardContainer'>
+            <article class='card' class='darkMode'>
+              <h2 class='diskName'>Disk C<img class='diskIcon' src='images/hdd-outlined.svg'></h2> 
+                <div class='chart' data-percent='55' ><span class='percent'>55</span></div>
+                <h4 class='data date'>18. Feb 2022</h4>
+                <div class='dataContainer'>
+                  <h4 class='dataName totalStrg'>Total<span class='data gb totalAmnt'>247</span></h4>
+                  <h4 class='dataName freeStrg'>Free<span class='data gb freeAmnt'>54</span></h4>
+                  <h4 class='dataName status'>Status<span class='data statusStr'>Healthy</span></h4>
+                  <h4 class='dataName operational'>Operational<span class='data operationalStr'>OK</span></h4>
+                </div>
+            </article>
+            <article class='card' class='darkMode'>
+              <h2 class='diskName'>Disk D<img class='diskIcon' src='images/hdd-outlined.svg'></h2> 
+                <div class='chart' data-percent='85' ><span class='percent'>85</span></div>
+                <h4 class='data date'>18. Feb 2022</h4>
+                <div class='dataContainer'>
+                  <h4 class='dataName totalStrg'>Total<span class='data gb totalAmnt'>465</span></h4>
+                  <h4 class='dataName freeStrg'>Free<span class='data gb freeAmnt'>73</span></h4>
+                  <h4 class='dataName status'>Status<span class='data statusStr'>Healthy</span></h4>
+                  <h4 class='dataName operational'>Operational<span class='data operationalStr'>OK</span></h4>
+                </div>
+            </article>
+            <article class='card' class='darkMode'>
+              <h2 class='diskName'>Disk R<img class='diskIcon' src='images/hdd-outlined.svg'></h2> 
+                <div class='chart' data-percent='5' ><span class='percent'>5</span></div>
+                <h4 class='data date'>16. Feb 2022</h4>
+                <div class='dataContainer'>
+                  <h4 class='dataName totalStrg'>Total<span class='data gb totalAmnt'>100</span></h4>
+                  <h4 class='dataName freeStrg'>Free<span class='data gb freeAmnt'>95</span></h4>
+                  <h4 class='dataName status'>Status<span class='data statusStr'>Healthy</span></h4>
+                  <h4 class='dataName operational'>Operational<span class='data operationalStr'>OK</span></h4>
+                </div>
+            </article>
+            <article class='card' class='darkMode'>
+              <h2 class='diskName'>Disk F<img class='diskIcon' src='images/hdd-outlined.svg'></h2> 
+                <div class='chart' data-percent='79' ><span class='percent'>79</span></div>
+                <h4 class='data date'>18. Feb 2022</h4>
+                <div class='dataContainer'>
+                  <h4 class='dataName totalStrg'>Total<span class='data gb totalAmnt'>1000</span></h4>
+                  <h4 class='dataName freeStrg'>Free<span class='data gb freeAmnt'>70</span></h4>
+                  <h4 class='dataName status'>Status<span class='data statusStr'>Healthy</span></h4>
+                  <h4 class='dataName operational'>Operational<span class='data operationalStr'>OK</span></h4>
+                </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h5 id="btnTop">Go to top</h5>
+      <p>Bazefield AS</p>
+    </footer>
+
+    <!--https://github.com/rendro/easy-pie-chart-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--Download these or smth later-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script> 
+    <script>
+      $(function() {
+        $('.chart').easyPieChart({
+            size: 120,
+            barColor: function (percent) {
+              const r = 255 * percent/100
+              const g = 255 - (255 * percent/100)
+              return 'rgb('+r+','+g+',0)'
+            },
+            scaleLength: 0,
+            lineWidth: 12,
+            trackColor: "#525151",
+            lineCap: "circle",
+            animate: {
+              duration: 2000, 
+              enabled: true,
+          },
+          onStep: function(from, to, percent) {
+              $(this.el).find('.percent').text(Math.round(percent)); 
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
