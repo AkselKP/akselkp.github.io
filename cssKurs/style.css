@@ -1,26 +1,48 @@
-  /*Resume*/
-  .pdf {
-    height: 100vh;
+* {
+    font-family: sans-serif;
 }
 
-#pdfSrc {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 10px;
+body {
+    background: rgb(27, 27, 27);
 }
 
-#btnVSCode {
-    font-size: 48px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 50px 0;
-}
-
-#pythonKurs {
+#cssKurs {
     text-align: center;
+    font-size: 78px;
+    color: #29A9DF;
+    transition: 0.3s;
+}
+
+main {
+    text-align: center;
+}
+
+
+#container {
+    margin-top: 80px;
+}
+
+img {
+    height: 250px;
+    transition: 0.3s;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn {
     font-size: 48px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    font-size: 58px;
+    border: 2px solid #29A9DF;
 }
