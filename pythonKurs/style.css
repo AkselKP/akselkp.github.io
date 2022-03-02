@@ -12,12 +12,14 @@
     border-radius: 10px;
 }
 
-#btnVSCode {
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#btnVSCode, #btnForms {
     font-size: 48px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 50px 0;
+    margin: 50px;
 }
 
 #pythonKurs {
