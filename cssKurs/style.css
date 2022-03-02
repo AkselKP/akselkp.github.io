@@ -1,0 +1,64 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(27, 27, 27);
+    margin: 0;
+}
+
+#cssKurs {
+    text-align: center;
+    font-size: 58px;
+    color: #29A9DF;
+    transition: 0.3s;
+}
+
+main {
+    text-align: center;
+}
+
+.pdf {
+    height: 100vh;
+}
+
+#pdfSrc {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+
+
+#container {
+    margin-top: 80px;
+}
+
+img {
+    height: 250px;
+    transition: 0.3s;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 32px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    font-size: 38px;
+    border: 2px solid #29A9DF;
+}
