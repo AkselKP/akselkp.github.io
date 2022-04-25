@@ -336,6 +336,9 @@ max-width: 600px;
     font-size: 12px;
     top: 70px;
   }
+  #WIPScreen {
+    background: #fff;
+  }
 }
 
 .footerTitle {
