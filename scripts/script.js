@@ -1,3 +1,11 @@
+document.getElementById("btnShowProjects").onclick = () => {
+  document.getElementById("WIPScreen").style.backdropFilter = "blur(0px)"
+  document.getElementById("WIPScreen").style.opacity = "0"
+  setTimeout(() => {
+    document.getElementById("WIPScreen").style.display = "none"
+  }, "1000")
+}
+
 function topFunction() {
   window.scrollTo({
     top: 0,
