@@ -1,0 +1,57 @@
+* {
+    font-family: sans-serif;
+}
+
+div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+#comingSoon {
+    font-size: 82px;
+    margin: 0;
+}
+
+#akselkp {
+    font-size: 38px;
+    margin-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkblue;
+}
+
+span {
+    color: darkblue;
+}
+
+span:before {
+    animation: dots 2s linear infinite;
+    content: '';
+  }
+
+  @keyframes dots {
+    0%, 20% {
+      content: '.';
+    }
+    40% {
+      content: '..';
+    }
+    60% {
+      content: '...';
+    }
+    90%, 100% {
+      content: '';
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #comingSoon {
+        font-size: 60px;
+    }
+    #akselkp {
+        font-size: 40px;
+    }
+}
